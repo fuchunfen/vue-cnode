@@ -8,9 +8,10 @@ UI参照于[lzxb](https://github.com/lzxb) [react-cnode](https://github.com/lzxb
 ```
   1.登录退出
   2.列表分页，查看帖子
-  3.回复帖子
-  4.个人中心
-  5.查看别人的资料
+  3.收藏贴子
+  4.点赞
+  5.个人中心
+  6.查看别人的资料
 
 ****
 
