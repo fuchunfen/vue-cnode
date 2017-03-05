@@ -1,0 +1,28 @@
+.put_top {
+    background: #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 3px;
+    width: 30px;
+    &.active {
+        background: #198AC8;
+        color: #fff;
+    }
+}
+.iconfont {
+    color: #ccc;
+    &.active {
+        color: #198AC8;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    div {
+        margin: 10px 0;
+    }
+}
+[v-cloak] {
+  display: none;
+}
