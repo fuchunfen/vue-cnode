@@ -1,14 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../views/index'
-import Topic from '../views/Topic'
+// import Topic from '../views/Topic'
 import User from '../views/User'
 import Message from '../views/Message'
 import Send from '../views/Send'
 import Login from '../views/Login'
 import store from '../vuex/store'
 
+const Topic = resolve => require(['../views/Topic'], resolve)
+
 Vue.use(Router)
+
 
 const router = new Router({
   routes: [
@@ -48,7 +51,6 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-    console.log(store)
     if(to.meta.requiresAuth && store.state.user == null){
         next('login')
     }else if(to.name == 'login' && store.state.user != null) {
