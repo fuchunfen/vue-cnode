@@ -49,7 +49,7 @@
             </div>
 
         </div>
-        <edit @send="send" ref="profile" @getEdit="getEdit"></edit>
+        <edit @send="send" @getEdit="getEdit"></edit>
     </div>
 
 </template>
