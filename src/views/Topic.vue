@@ -49,7 +49,7 @@
             </div>
 
         </div>
-        <edit @send="send" @getEdit="getEdit"></edit>
+        <edit @send="send" ref="profile" @getEdit="getEdit"></edit>
     </div>
 
 </template>
@@ -74,6 +74,7 @@
         }),
         created () {
             this.fetchData()
+
         },
         data () {
             return {
@@ -178,8 +179,6 @@
                 }
             },
             send () {
-
-
                 if(this.user){
                     let content = this.obj.innerHTML
 

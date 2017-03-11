@@ -12,7 +12,7 @@
             <i class="iconfont icon-message"></i>
             <span>消息</span>
         </router-link>
-        <a :class="{active:cs('user')}" @click="toUser">
+        <a :class="{active:user && cs('user')}" @click="toUser">
             <i class="iconfont icon-account"></i>
             <span>我的</span>
         </a>
